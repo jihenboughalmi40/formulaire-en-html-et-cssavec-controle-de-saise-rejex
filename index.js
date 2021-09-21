@@ -4,17 +4,12 @@ function verif(){
     alert("champ nom et prénom est obligatoire"
     );
     return false;
-}else if  ( (f.name.value.indexof("[0-9a-zA-Z]{3,20}")==-1) ||
-(f.name.value.indexof('[a-z0-9]')<0) )
-{
-    alert("verifier que votre  name est correct");
-    return false;
 
-}else if (f.CIN.value)
+}else if (f.CIN.value == "")
 {alert("champ CIN est obligatoire");
 return false;
 
-}else if (f.email.value){
+}else if (f.email.value == ""){
     alert("champ email est obligatoire");
     return false;
 }else if  ( (f.email.value.indexof('@')==-1) ||

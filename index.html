@@ -28,11 +28,11 @@
 
        <div class="items2">
 
-    <div class="items1"><input id="name" name="name "type="text"  pattern [A-z]={1} required></div>
-    <div class="items1"><input id="CIN" name="CIN "type="text" maxlength ='8' minlength="8" required  >
+    <div class="items1"><input id="name" name="name "type="text" required pattern='[A-z" "]{6,20}' ></div>
+    <div class="items1"><input id="CIN" name="CIN "type="text" required pattern= "[0-9]{8}" maxlength ="8" minlength="8"  >
       </div>
     <div class="items1"> <input type="email" placeholder="Contact@exemple.com" name="email" required></div>
-    <div class="items1"> <input type="radio" name="niveau" value="s" checked>
+    <div id="items4"> <input type="radio" name="niveau" value="s" checked>
           secondaire
            <input type="radio" name="niveau" value="u" checked>
              Universitaire
